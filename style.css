@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); 
+
+:root{
+--light-blue:#8E7BEF;
+--strong-blue:#5D3BEF;
+--light-white:#F9F6FF;
+--black:#222222;
+--light-black:#423F40;
+--white:#FFFFFF;
+--medium-white:#F9F5F2;  
+}
+
+*   {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;  
+  font-family: "Montserrat",sans-serif;
+  font-size: 20px;
+    }
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:5em;
+    padding:1em;
+    max-width:768px;
+    min-width:320px; 
+    
+}
+
+.section
+{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    
+     padding: 1em;
+     gap:2em; 
+     width:calc(320px);  
+     
+     
+   
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container .home nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+
+
+   
+}
+
+ nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    transition: margin-top 0.3s;
+    margin-top: -100%;
+    
+    list-style: none;
+
+    
+           
+}
+
+.show__menu 
+{
+    margin-top:0;
+    background-color: grey;
+    width: 100%;
+}
+
+
+.icon__burger-show {
+    cursor: pointer;
+    display:block;
+}
+
+
+.container_photoandtext .header
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;  
+}
+
+
+.container_photoandtext .header .title
+{
+  font-weight: 700;
+  font-size:50px;
+  font-stretch: condensed;
+ 
+}
+
+.container_photoandtext .header .subtitle
+{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.social
+{
+display: flex;
+justify-content: space-around;
+position: relative;  
+bottom:40px;
+}
+ 
+
+.figure
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:60px;
+    height:60px;
+    background-color: var(--light-blue);
+    border-radius:100%;
+}
+
+ .figure svg
+{
+    width:70%;
+    height:70%;
+} 
+
+.contacto
+{
+    display:flex;
+    gap:2em;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--strong-blue);
+    padding:2px;
+
+}
+
+.container_image
+{
+    
+    display:flex;
+    justify-content: center;
+}
+
+.container_image img
+{
+    width: 90%;
+    
+}
+
+.contacto p
+{
+    color: var(--medium-white);
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+
+.section h3
+{
+    font-size: 24px;  
+    text-align: center;
+}
+
+.section p
+{
+    font-weight: 400;
+    text-align:justify;
+    color:var(--light-black);
+    font-size: 20px;
+}
+
+.container_skills{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.skill
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--light-white);
+}
+
+.skill .heading 
+{
+    
+    display: flex;
+    gap: 0.5em;
+    
+}
+
+.skill .heading img{
+    height:24px;
+}
+
+.skill .heading p
+{
+    color: var(--light-black);
+    font-size: 16px;
+}
+
+.skill h4
+{
+  font-weight: 700;
+  font-size: 20px;  
+}
+
+
+
+.box_experience{
+    display: flex;
+    flex-direction: column;
+    
+    
+   
+}
+
+.job{
+    display: flex;
+    gap:1em;
+    align-items:flex-start;
+
+}
+
+.jobs_info .place 
+{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.jobs_info .time
+{
+    color: var(--light-black);
+    font-size: 12px;    
+}
+
+.job .year
+{  
+    display: flex;
+    align-self: center;
+    font-weight: 700;
+    font-size: 20px;  
+    
+}
+
+.job svg
+{
+    position: relative;
+    bottom:10px
+}
+
+.order_images{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.portfolio .center
+
+{
+    display: flex;
+    gap: 0.5em;
+    
+}
+    
+.portfolio .center img
+{
+   width:48.5%; 
+}
+
+ .box
+{
+    display: flex; 
+    gap: 1em;
+    justify-content: center;
+    align-items:center;
+   
+    
+}
+
+.net
+{
+display: flex;
+flex-direction: column;
+justify-items: center;
+gap:1em;
+align-items: center;
+align-self: flex-start;
+
+}
+
+ .net .image 
+{
+background-color:#d8d5d2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 100%;
+height:60px;
+width:60px;
+}
+
+.image img
+{
+    height: 70%;
+    width: 60%;
+    display:flex;
+    justify-content:center;
+    
+}
+
+.net .data
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    gap:0.5em;
+}
+
+.data p:nth-child(1)
+{
+  font-weight: 700;
+  font-size: 20px;  
+}
+
+.data p:nth-child(2)
+{
+    color: var(--light-black);
+    font-size: 16px;   
+
+}
+
+@media (min-width:780px){
+
+.container{
+    margin: auto;
+    display:flex;
+    flex-direction: column;  
+    justify-items: center;
+    align-items: center;
+    gap:2em;
+    width:1200px;
+      
+}
+
+.section{
+
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    gap:1em;
+    width:780px;   
+    padding: 1em; 
+   
+}
+
+.home{
+
+    display: flex;
+    gap:3em;
+    
+}
+.home nav {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-end;
+    position: relative;
+    
+    left:10px;
+   
+    
+}
+
+ nav ul {
+    
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:1em;
+    top:0;
+    margin-top:0;
+    height: 50px;
+    transition: none;
+    background-color: none
+
+}
+
+.icon__burger {
+    cursor: pointer;
+    display: none;
+    
+
+} 
+
+.container_photoandtext {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-row: 60% 40%;
+    align-self: center;
+    column-gap: 1em;
+    width: calc(760px);
+    padding: 1em;
+      
+ }
+
+ .header{
+    
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+ }
+
+ .container_image{
+    
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+ }
+
+    .container_image img{
+        border-radius: 25%;
+        border: 1px solid;
+    }  
+
+ 
+
+ .redes{
+   
+    grid-column: 2/3;
+    grid-row: 2/3;
+ }
+
+ 
+.container_skills{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.box_experience
+{
+    display: flex;
+    flex-direction: row;
+    
+ 
+
+}
+
+
+.order_images{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    
+}
+.order_images img{
+    width: 33.3%;
+}
+.center img{
+ width: 16.65%;
+
+}
+
+li a {
+
+    font-weight: 700;
+    color:#8E7BEF
+}
+
+}
+
+
